@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*	*{color:red;background-color:yellow;font-size:30px;}
+h1{background-color: red;}
+h2{background-color: green;}
+p{background-color: gold;}
+*/
+	.class1{color:blue;background-color:yellow;}
+	.class2{color:red;background-color:green;}
+	p.class1{color:navy;background-color:aqua;}
+/* p.class1은 라는 태그에만 적용한다 */
+	#id1{color:blue;background-color:yellow;}
+	#id2{color:red;background-color:green;}
+	p#id1{color:navy;background-color:aqua;}
+	
+	a:link{ color:pink; text-decoration:none;}
+	a:visited { color:red; }
+	a:hover{text-decoration:overline; color:black;}
+	a:active { background-color: yellow; }
+	
+	.div01{width:200px;height:100px;color:blue;
+			background-color:green;opacity:0.9;}
+	.div01:hover{
+	width:400px; height:50px;color:red;
+	background-color:yellow; opacity:0.5;
+	transition:all 1.5s linear 0.5s;}
+	
+	.div02 ul li{color:red; list-style:none;display:inline;
+				padding:10px;background-color:gray;}
+	.div02 .h2{background-color:purple;}
+	
+	.div03{overflow:hidden;background-color:blue;height:100px;}
+	.div03 div{background-color:red; width:200px;height:200px}
+	
+</style>
+</head>
+<body>
+<div class="div03">hello
+<div>css</div>
+</div>
+<h1>다음 내용</h1>
+<!-- div03을 벗어나는것을 처리하기 위해선  overflow:hidden을 사용한다 
+auto 는 스크롤이 생김  -->
+<hr>
+<h2 class="h2">후손 선택자</h2>	
+	<div class="div02">
+		<h2 class="h2">후손 선택자</h2>
+		<ul>
+			<li>후손 선택자</li><li>후손 선택자</li>
+		</ul>
+	</div>
+<hr>
+<h2>가상 선택지</h2>
+<div class="div01">
+	가상 클래스를 이용한 애니메이션 효과<br>마우스가 위에 있으면 박스가 늘어나요
+</div>
+<!-- all은 1.5초안에 바뀌어라 linear은 0.5초 기다렸다가 동작해라 -->
+<hr>
+<p><a href="#">test</a>:마우스 이벤트에 따른 링크 변화</p>
+<p><a href="#">test</a>:마우스 이벤트에 따른 링크 변화</p>
+link:웹 문서에서 사용자가 방문하지 않았던 곳을 표시한다.<br>
+visited:웹 문서에서 사용자가 방문한 곳을 표시한다.<br>
+hover:웹 문서에서 사용자가 링크에 마우스 포인터를 올리는 순간을 나타낸다.</br>
+active:웹 문서에서 사용자가 링크를 클릭하는 순간을 나타낸다.<br>
+<hr>
+<h1 id="id1">전체 스타일 적용</h1>
+<h2 id="id2">전체 스타일 적용</h2>
+<p id="id1">전체 스타일 적용</p>
+<!-- id선택자 -->
+<hr>
+
+<!--  무언가 꾸미고자 할때 사용함  헤드와 헤드 사이 또는 외부파일을 사용함 style이라고 해서 들어오는게 css-->
+<!--style은 있어도 되고 없어도 됨 *은 모든 태그에 대해서 해당하는 스타일이 적용됨-->
+<h1 style="background-color:pink;color:blue">전체 스타일 적용</h1>
+<!-- 위에 처럼 바로 h1에다 적용한것을 인라인 방식이라고 한다. 우선순위 -->
+<hr>
+<h1 class="class1">전체 스타일 적용</h1>
+<h2 class="class2">전체 스타일 적용</h2>
+<p class="class1">전체 스타일 적용</p>
+<!-- 클래스 선택자는 .을 이용해서 사용한다 -->
+
+
+</body>
+</html>

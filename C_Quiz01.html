@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css"></link>
+<style type="text/css">
+/*기본*/
+#wrap{display: flex;flex-flow: column;margin: 0 auto;width:80%;max-width:1200px;}
+
+.header{display:flex;flex-flow:row;padding-top: 10px;padding-bottom: 30px;}
+.header_img{width: 70px;height:70px;}
+.header_title{font-weight: bold;font-size: 1.5em;padding-top: 35px;}
+
+.nav ul li{order:2;height:50px;margin-left: 50px;margin-top:20px;}
+.nav ul li a{font-size:1.5em;color:black;}
+
+.section{display: flex;flex-flow:column;}
+.section1_col{display:flex;flex-flow:column;}
+.section1_col img{width:70%;height:250px;}
+
+.section2{order :3;}
+
+
+/*===========================================================*/
+@media all and (min-width:800px){
+#wrap{position:relative;width:90%;max-width: 900px;}
+
+.header{display:flex;flex-flow:row;padding-top: 10px;padding-bottom: 30px;}
+.header_img{width: 100px;height:100px;box-shadow: 3px 3px 5px #000000;}
+.header_title{font-weight: bold;padding-left: 80px;font-size: 2.0em;padding-top: 30px;}
+
+
+.nav ul {order:2;background-color: gray;height:30px;padding-top: 10px;}
+.nav li {display:inline;}
+.nav ul li a{font-size: 1.0em;color:white;}
+.nav .font{visibility: hidden;}
+
+.section{display: flex;flex-flow: row;}
+.section1_col{display:flex;flex-flow:column;}
+.section1_col img{width:120px;height:120px;padding-top: 10px;}
+
+
+.section2{padding: 30px;}
+.section2_info{font-size: 1.3em;}
+.section2 div{padding-top:10px;width:370px;}
+.section2 img{width:50px;height:50px;}
+.section h7{float:left;font-size: 1.0em;}
+
+}
+</style>
+<body>
+<div id="wrap">
+<header class="header">
+<img class="header_img" src="resources/images/맛집.png">
+<h1 class="header_title"><i>맛집탐방 이야기^^</i></h1>
+</header>
+<nav class="nav">
+<ul>
+<li class="nav font"><a href="">로그인</a></li>
+<li><a href="">HOME</a></li>
+<li><a href="">게시판</a></li>
+<li><a href="">내정보</a></li>
+</ul>
+</nav>
+<section class="section">
+<section class="section1_col">
+<img src="resources/images/l_정우성.jpg">
+<img src="resources/images/l_aside.gif">
+</section>
+<section class="section2">
+<h1 class="section2_info">^오늘의 맛집^</h1>
+<div>
+<div style="width:80%; align:left;">
+<h7 >오늘 방문한 곳은 맛있는 음식이 나오는 집.</h7>
+</div>
+<img src="resources/images/맛집01.jpg">
+<div>
+<div style="width:80%; align:left;">
+<h7 >오늘 방문한 곳은 맛있는 음식이 나오는 집.</h7>
+</div>
+<img src="resources/images/맛집02.jpg">
+
+<div>
+<div style="width:80%; align:left;">
+<h7 >오늘 방문한 곳은 맛있는 음식이 나오는 집.</h7>
+</div>
+<img src="resources/images/맛집03.jpg">
+</div>
+</section>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.div{ margin:0 auto; border:1px solid black; width: 600px; 
+	 text-align:center}
+.fix{overflow: hidden}
+#wrap{display:flex; flex-flow: column}
+.header{border: 1px solid black; border-bottom:3px solid black; 
+		background-color:red;}
+.nav{background-color: gold;}
+.section{background-color: green;width:400px;height:300px;}
+.row{display: flex;}
+.aside{background-color: skyblue;width:200px;height:300px}
+.footer{background-color: pink;height:100px}
+h4.hh{background-color:pink;border: 1px solid black;margin:10px;padding:10px;}
+</style>
+</head>
+<body>
+<div class="div fix">
+		<div id="wrap">
+		<header class="header">
+		<h1>&lsaquo; header &rsaquo;</h1>
+		</header>
+		<nav class="nav"><h4>&lsaquo; nav &rsaquo;</h4></nav>
+		<div class="row">
+		<section class="section">
+		<h4>&lsaquo; section &rsaquo;</h4>
+		<h4 class="hh">Header</h4>
+		<h4 class="hh">Article</h4>
+		<h4 class="hh">Footer</h4>
+		</section>
+		<aside class="aside">
+		<h4>&lsaquo; aside &rsaquo;</h4>
+		</aside>
+		</div>
+		<footer class="footer">
+		<h4>&lsaquo; footer &rsaquo;</h4>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
